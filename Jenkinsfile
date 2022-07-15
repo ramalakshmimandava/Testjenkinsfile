@@ -25,7 +25,7 @@ pipeline{
         }
         stage('Run') {
             steps { 
-                sh 'javac Simple'
+                sh 'javac ${env.WORKSPACE}/Simple'
                 //java Simple
             }
         }
