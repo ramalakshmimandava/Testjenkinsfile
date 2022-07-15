@@ -6,7 +6,15 @@ pipeline{
             echo "welcome to jenkins"
           }
         }
-      
+      stage('filepath'){
+          steps{
+            pomPath = findFiles(glob: "**/Simple.java")[0].path
+            env.WORKSPACE = pwd()
+                  
+                  echo "env.WORKSPACE:" + env.WORKSPACE
+          }
+        }
+          
         stage('Build') {
             steps {
                   sh 'javac Simple.java'
