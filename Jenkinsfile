@@ -9,12 +9,14 @@ pipeline{
       
         stage('Build') {
             steps {
-                javac Simple.java
+                  sh 'javac Simple.java'
+               // javac Simple.java
             }
         }
         stage('Run') {
-            steps {
-                java Simple
+            steps { 
+                sh 'javac Simple'
+                //java Simple
             }
         }
    
