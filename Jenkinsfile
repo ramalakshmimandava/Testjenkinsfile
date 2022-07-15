@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment{
+        WORKSPACE = pwd()
+    }
   stages{
         stage('hai'){
           steps{
@@ -8,19 +11,16 @@ pipeline{
         }
       stage('filepath'){
           steps{
-            //pomPath = findFiles(glob: "**/Simple.java")[0].path
-           // env.WORKSPACE = pwd()
-             echo pwd()  
+              echo "${env.WORKSPACE}"
                 
           }
         }
           
         stage('Build') {
             steps {
-                //dir("/var/lib/jenkins/workspace/demopipelinetask/my-app"){
-                  sh 'javac Simple.java'
-                //}
-               // javac Simple.java
+               
+                  sh 'javac ${env.WORKSPACE}/Simple.java'
+                
             }
         }
         stage('Run') {
