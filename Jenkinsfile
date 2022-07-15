@@ -1,12 +1,12 @@
 pipeline{
     agent any
   stages{
-    stage('hai'){
-      steps{
-        echo "welcome to jenkins"
-      }
-    }
-      stages {
+        stage('hai'){
+          steps{
+            echo "welcome to jenkins"
+          }
+        }
+      
         stage('Build') {
             steps {
                 javac Simple.java
@@ -17,6 +17,6 @@ pipeline{
                 java Simple
             }
         }
-    }
+   
   }
 }
