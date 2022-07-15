@@ -8,16 +8,18 @@ pipeline{
         }
       stage('filepath'){
           steps{
-            pomPath = findFiles(glob: "**/Simple.java")[0].path
+            //pomPath = findFiles(glob: "**/Simple.java")[0].path
            // env.WORKSPACE = pwd()
-             echo "pomPath:"     
+             echo pwd()  
                 
           }
         }
           
         stage('Build') {
             steps {
+                //dir("/var/lib/jenkins/workspace/demopipelinetask/my-app"){
                   sh 'javac Simple.java'
+                //}
                // javac Simple.java
             }
         }
