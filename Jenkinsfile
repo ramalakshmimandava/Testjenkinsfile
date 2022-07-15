@@ -10,8 +10,8 @@ pipeline{
           steps{
             pomPath = findFiles(glob: "**/Simple.java")[0].path
             env.WORKSPACE = pwd()
-                  
-                  echo "env.WORKSPACE:" + env.WORKSPACE
+             echo "env.WORKSPACE:" + env.WORKSPACE "     
+                
           }
         }
           
