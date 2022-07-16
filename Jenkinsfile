@@ -19,13 +19,13 @@ pipeline{
      stage('Build') {
            steps {
                
-                 bat 'javac ${env.WORKSPACE}/Simple.java'
+                 bat 'javac ${env.WORKSPACE}\Simple.java'
                 
             }
         }
         stage('Run') {
             steps { 
-                bat 'java ${env.WORKSPACE}/Simple'
+                bat 'java ${env.WORKSPACE}\Simple'
                 //java Simple
             }
         }
