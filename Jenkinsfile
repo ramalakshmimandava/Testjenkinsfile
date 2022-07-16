@@ -16,20 +16,20 @@ pipeline{
           }
         }
           
-       /* stage('Build') {
+     stage('Build') {
            steps {
                
-                 sh 'javac ${env.WORKSPACE}/Simple.java'
+                 bat 'javac ${env.WORKSPACE}/Simple.java'
                 
             }
         }
         stage('Run') {
             steps { 
-                sh 'java ${env.WORKSPACE}/Simple'
+                bat 'java ${env.WORKSPACE}/Simple'
                 //java Simple
             }
         }
-        */
+        
    
   }
 }
