@@ -6,7 +6,7 @@ pipeline{
     //adding parameters (18/7/2022)
      parameters {
         string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
-        string(name: 'Welcome', defaultvalue: 'Welcome to my Test', description: 'I welcome to all my location')
+        string(name: 'Welcome', defaultValue: 'Welcome to my Test', description: 'I welcome to all my location')
     }
   stages{
         stage('hai'){
