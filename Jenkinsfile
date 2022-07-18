@@ -39,6 +39,11 @@ pipeline{
                 //java Simple
             }
         }
+      stage("Env Variables"){
+            steps{
+                bat "set"                                                     
+            }
+        }
   }
     post {
         always {
