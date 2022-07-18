@@ -49,7 +49,7 @@ pipeline{
         }
        stage("Env Variables"){
             steps{
-                echo “Hello World!” > %WORKSPACE%\buildArtifact.txt
+                echo “Hello World!”  %WORKSPACE%\buildArtifact.txt
                      }
         }
   }    
