@@ -4,7 +4,7 @@ pipeline{
         WORKSPACE = pwd()
     }
      triggers {
-        cron('*/2 * * * *)
+        cron('*/2 * * * *')
         //  cron('H */4 * * 1-5')
     }
     //adding parameters (18/7/2022)
