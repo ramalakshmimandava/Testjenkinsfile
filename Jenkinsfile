@@ -49,7 +49,7 @@ pipeline{
         }
        stage('Artifacts'){
             steps{
-                echo "Hello World! %WORKSPACE%\buildArtifact.txt"
+                echo "Hello World!" %WORKSPACE%/buildArtifact.txt
                }
         }
   }    
