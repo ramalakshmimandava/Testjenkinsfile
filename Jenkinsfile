@@ -47,8 +47,8 @@ pipeline{
      //adding post build action (18/7/2022)
     post {
         always {
-            mail to: bhemanirao@gmail.com, subject: 'Iam testing jenkins:)'
-            mail to: ramalakshmi.mandava@gmail.com, subject: 'Iam testing jenkins :)'
+           // mail to: bhemanirao@gmail.com, subject: 'Iam testing jenkins:)'
+            //mail to: ramalakshmi.mandava@gmail.com, subject: 'Iam testing jenkins :)'
         }
     }
 }
