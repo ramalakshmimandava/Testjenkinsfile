@@ -3,11 +3,21 @@ pipeline{
     environment{
         WORKSPACE = pwd()
     }
+     parameters {
+        string(name: 'Greeting', defaultValue: 'Hello', description: 'How should I greet the world?')
+        string(name: 'Welcome', defaultvalue: 'Welcome to my Test', description: 'I welcome to all my location')
+    }
   stages{
         stage('hai'){
           steps{
             echo "welcome to jenkins"
           }
+        }
+      stage('Parameter_Declaration') {
+            steps {
+                echo "${params.Greeting} World!"
+                 echo "${params.Welcome} Namste!"
+            }
         }
       stage('filepath'){
           steps{
