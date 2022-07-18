@@ -53,7 +53,7 @@ pipeline{
         always {
             echo 'thank you'
            // mail to: bhemanirao@gmail.com, subject: 'Iam testing jenkins:)'
-            mail to: ramalakshmi.mandava@gmail.com, subject: 'Iam testing jenkins :)'
+           //mail to: ramalakshmi.mandava@gmail.com, subject: 'Iam testing jenkins :)'
         }
     }
 }
