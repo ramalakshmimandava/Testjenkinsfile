@@ -47,11 +47,11 @@ pipeline{
                 bat "set"                                                     
             }
         }
-       stage('Artifacts'){
+     /*  stage('Artifacts'){
             steps{
                 echo "Hello World!" %WORKSPACE%/buildArtifact.txt
                }
-        }
+        }*/
   }    
      //adding post build action (18/7/2022)
     post {
