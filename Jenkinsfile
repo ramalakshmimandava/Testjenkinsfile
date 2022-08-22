@@ -42,11 +42,11 @@ pipeline{
             }
         }
       //adding Env Variables stage (18/7/2022)
-      stage("Env Variables"){
-            steps{
-                bat "set"                                                     
-            }
-        }
+//       stage("Env Variables"){
+//             steps{
+//                 bat "set"                                                     
+//             }
+//         }
      /*  stage('Artifacts'){
             steps{
                 echo "Hello World!" %WORKSPACE%/buildArtifact.txt
